@@ -1,0 +1,221 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo del sitio */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Azul celeste suave */
+    color: #333;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #39c0ba; /* Verde menta */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    background-color: #ff77a9; /* Rosado para hover */
+}
+
+/* Sección de video */
+.video-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section iframe {
+    border: 5px solid #39c0ba; /* Borde en verde menta */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #39c0ba; /* Verde menta */
+    font-size: 2.5rem;
+}
+
+/* Estilo de los tabs */
+#tabs {
+    margin: 30px auto;
+    width: 80%;
+    border: 2px solid #39c0ba;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ui-tabs-nav {
+    background-color: #ff77a9; /* Fondo rosado para las pestañas */
+    border-radius: 10px 10px 0 0;
+}
+
+.ui-tabs-nav li {
+    margin: 5px;
+}
+
+.ui-tabs-nav a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #39c0ba;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.ui-tabs-nav a:hover {
+    background-color: #e57373; /* Rojo suave al pasar el ratón */
+}
+
+.ui-tabs-panel {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ui-tabs-panel img {
+    float: right;
+    width: 150px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+/* Estilo del acordeón */
+#accordion h3 {
+    background-color: #39c0ba; /* Verde menta */
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+#accordion div {
+    background-color: #e0f7fa;
+    border: 2px solid #39c0ba;
+    padding: 20px;
+    display: none; /* Se ocultan inicialmente */
+}
+
+#accordion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#accordion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Mejoras visuales del acordeón */
+#accordion h3:hover {
+    background-color: #ff77a9; /* Hover rosado */
+}
+
+#accordion div p {
+    margin-top: 10px;
+}
+
+/* Transiciones suaves */
+#accordion h3, .ui-tabs-nav a, .nav-links a {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del seleccionador */
+#feedback { font-size: 1.4em; }
+#selectable .ui-selecting { background: #e57373; }
+#selectable .ui-selected { background: #ff77a9; color: white; }
+#selectable { list-style-type: none; margin: 12.5%; padding: 0; width: 75%; }
+#selectable li { margin: 3px; font-size: 1.4em; height: 30px; }
+.ui-widget-content {
+border: 1px solid #dddddd;
+background: #39c0ba;
+color: #333333;
+}
+
+/* Estilo del sorter */
+#sortable { list-style-type: none; margin: 12.5%; padding: 0; width: 75%; }
+#sortable li { margin: 0 3px 3px 3px; padding-left: 1.5em; font-size: 1.4em; height: 30px; }
+#sortable li span { margin-left: -1.3em; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #39c0ba;
+    font-weight: normal;
+    color: #454545;
+}
+
+
+.demoHeaders {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+    line-break: 50%;
+}
+
+#slider {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.puerro img {
+    width: 20%;
+    height: 10%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.puerro p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #39c0ba;
+}

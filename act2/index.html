@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../jquery-ui-1.14.0/jquery-ui.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../jquery-ui-1.14.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Act2-Pagina informativa</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Hatsune Miku</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="video-section">
+            <iframe width="50%" height="510" src="https://img1.picmix.com/output/pic/normal/4/1/0/1/11271014_70fc4.gif" frameborder="0" allow="autoplay; encrypted-media" scrolling="no"></iframe>
+        </section>
+
+        <h1>Bienvenido a la página de Mikus</h1>
+    </header>
+
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <!-- Estilo de tabs -->
+    <style>
+        #tabs {
+            height: 200px;
+            overflow: auto;
+        }
+        #tabs-1, #tabs-2 {
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        #tabs-1 img, #tabs-2 img {
+            float: right;
+            margin-left: 10px;
+            object-fit: contain;
+        }
+    </style>
+
+    <!-- Tabs -->
+    <h2 class="demoHeaders">Informacion de Miku</h2>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Quien es Miku?</a></li>
+            <li><a href="#tabs-2">Nacimiento</a></li>
+        </ul>
+        <div id="tabs-1">
+            Miku Hatsune (CV01/初音ミク Hatsune Miku) conocida mayormente como Hatsune Miku o simplemente Miku, es una cantante virtual para el sintonizador desarrollado por Yamaha, VOCALOID2, VOCALOID3 y VOCALOID4, así como para el programa desarrollado por Crypton Future Media, Piapro Studio.
+            <img src="miku_chibi.jpg">
+        </div>
+        <div id="tabs-2">
+            Se considera que su “nacimiento oficial” fue el 31 de agosto del 2007, fecha en la que se lanzó el programa de síntesis de voz VOCALOID, un sistema desarrollado por Crypton Future Media.
+            <img src="miku_chibi2.jpg">
+        </div>
+    </div>
+
+    <!-- Script de funcionalidad acordion jquery-->
+    <script>
+        $ (function () {
+            $ ( "#accordion" ).accordion();
+        } );
+    </script>
+
+    <!-- Estilo del modulo acordeon-->
+    <style>
+        #accordion img{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    </style>
+
+    <div id="accordion">
+        <h3>Miku Mexicana</h3>
+        <div id="mikuMexicana">
+            <img src="miku_mexican.jpg">
+            <p>
+
+            </p>
+        </div>
+
+        <h3>Miku Sakura</h3>
+        <div id="mikuMexicana">
+            <img src="miku_sakura.jpg">
+            <p>
+
+            </p>
+        </div>
+
+        <h3>Miku Brasilena</h3>
+        <div id="mikuMexicana">
+            <img src="brazilian_miku.jpg">
+            <p>
+
+            </p>
+        </div>
+
+        <h3>Miku Racing 2022</h3>
+        <div id="mikuMexicana">
+            <img src="Rmiku2022_rd1.jpg">
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Selleccionador de cancion de miku -->
+    <script>
+        $( function() {
+            $( "#selectable" ).selectable();
+        } );
+        </script>
+
+    <h2 class="demoHeaders">Mis canciones favoritas</h2>
+    <ol id="selectable">
+        <li class="ui-widget-content">【手描き】ワールドイズマイン【PV】~ Hatsune Miku - World is Mine</li>
+        <li class="ui-widget-content">【初音ミク】MikuFiesta by AlexTrip Sands</li>
+        <li class="ui-widget-content">Kikuo - Lo siento, lo siento "Gommene gomenne"</li>
+        <li class="ui-widget-content">Kikuo- Aishite Aishite</li>
+        <li class="ui-widget-content">siinamota - Young Girl A</li>
+    </ol>
+
+    <h2 class="demoHeaders">Enumera tus canciones favoritas:</h2>
+    <script>
+        $( function() {
+            $( "#sortable" ).sortable();
+        } );
+        </script>
+
+    <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>手描き】ワールドイズマイン【PV】~ Hatsune Miku - World is Mine</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>【初音ミク】MikuFiesta by AlexTrip Sands</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Kikuo - Lo siento, lo siento "Gommene gomenne</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Kikuo- Aishite Aishite</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>siinamota - Young Girl A</li>
+    </ul>
+
+    <script>
+        $( function() {
+            var handle = $( "#custom-handle" );
+            $( "#slider" ).slider({
+            create: function() {
+                handle.text( $( this ).slider( "value" ) );
+            },
+            slide: function( event, ui ) {
+                handle.text( ui.value );
+            }
+            });
+        } );
+        </script>
+
+    <h2 class="demoHeaders">Nivel de amor a Miku <3 </h2>
+    <div id="slider">
+        <div id="custom-handle" class="ui-slider-handle"></div>
+    </div>
+
+    <!-- Imagen de puerro -->
+    <div class="puerro">
+        <img src="puerro.jpg">
+        <p>
+            Con amor para Miku <3
+        </p>
+    </div>
+
+</body>
+</html>
