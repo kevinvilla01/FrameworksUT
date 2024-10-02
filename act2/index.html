@@ -14,21 +14,21 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">Hatsune Miku</a>
+                <a href="https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us">Hatsune Miku</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+                <li><a href="index.html#mitop">Canciones fav</a></li>
+                <li><a href="index.html#tutop">Crea tu top</a></li>
             </ul>
         </nav>
 
         <section class="video-section">
-            <iframe width="50%" height="510" src="https://img1.picmix.com/output/pic/normal/4/1/0/1/11271014_70fc4.gif" frameborder="0" allow="autoplay; encrypted-media" scrolling="no"></iframe>
+            <iframe width="33%" height="510" src="https://img1.picmix.com/output/pic/normal/4/1/0/1/11271014_70fc4.gif" frameborder="0" allow="autoplay; encrypted-media" scrolling="no"></iframe>
         </section>
 
-        <h1>Bienvenido a la página de Mikus</h1>
+        <h1 id="inicio">Bienvenido a la página de Mikus</h1>
     </header>
 
     <script>
@@ -88,6 +88,8 @@
         }
     </style>
 
+    <h2 id="galeria" class="demoHeaders">Galeria</h2>
+
     <div id="accordion">
         <h3>Miku Mexicana</h3>
         <div id="mikuMexicana">
@@ -129,7 +131,7 @@
         } );
         </script>
 
-    <h2 class="demoHeaders">Mis canciones favoritas</h2>
+    <h2 id="mitop" class="demoHeaders">Mis canciones favoritas</h2>
     <ol id="selectable">
         <li class="ui-widget-content">【手描き】ワールドイズマイン【PV】~ Hatsune Miku - World is Mine</li>
         <li class="ui-widget-content">【初音ミク】MikuFiesta by AlexTrip Sands</li>
@@ -138,7 +140,7 @@
         <li class="ui-widget-content">siinamota - Young Girl A</li>
     </ol>
 
-    <h2 class="demoHeaders">Enumera tus canciones favoritas:</h2>
+    <h2 id="tutop" class="demoHeaders">Enumera tus canciones favoritas:</h2>
     <script>
         $( function() {
             $( "#sortable" ).sortable();
